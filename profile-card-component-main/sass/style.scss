@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: hsl(185, 75%, 39%);
+	font-family: 'Kumbh Sans';
+	font-size: 18px;
+	overflow: hidden;
+	background-image: url('../images/bg-pattern-bottom.svg'), url('../images/bg-pattern-top.svg');
+	background-position: top -35% right -25%, top 40% left -30%;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 850px 850px, 850px 850px;
+}
+
+main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#container {
+	background-color: white;
+	display: inline-flex;
+	height: 350px;
+	width: 300px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+.bg-img img {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+.foto img {
+	margin-top: -50%;
+	border-radius: 50px;
+	border: 5px solid #fff;
+	width: 100%;
+}
+.personal {
+	display: flex;
+	flex-direction: column;
+	margin-top: 7%;
+}
+.name {
+	font-weight: 700;
+}
+span {
+	font-weight: 400;
+	color: grey;
+}
+.place {
+	font-weight: 400;
+	text-align: center;
+	margin-top: 4%;
+	color: gray;
+	font-size: 15px;
+}
+.visitors {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 3%;
+	border-top: 1px solid gray;
+}
+.number {
+	font-weight: 700;
+	text-align: center;
+}
+.text {
+	font-weight: 400;
+	text-align: center;
+	font-size: 15px;
+	color: gray;
+}
+.followers,
+.like,
+.photo {
+	flex: 1 1 auto;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	left: 50%;
+	bottom: 1%;
+	transform: translate(-50%);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:425px){
+    body{
+        background-size: 650px 650px, 650px 650px;
+        background-position: bottom 140% left -40%, top 58% right -12%;
+    }
+}
